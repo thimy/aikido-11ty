@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Grab title from the page data and dump it here -->
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <h1 class="main-title">👣 Aikido Club Redonnais</h1>
+    <nav class="links">
+      <a href="/">Accueil</a>
+      <a href="/aikido">L’aikido</a>
+      <a href="/le-club">Le club</a>
+      <a href="/stages">Stages</a>
+      <a href="/rejoindre" class="cta">Nous rejoindre</a>
+    </nav>
+  </header>
+  <!-- Grab the content from the page data and dump it here, and mark it as safe -->
+  <!-- Safe docs: https://mozilla.github.io/nunjucks/templating.html#safe -->
+  <main class="main-content">
+    {{ content | safe }}
+  </main>
+  <footer class="main-footer">
+    <h3 class="h3">Informations pratiques</h3>
+    <address>
+      <div>
+        <h4 class="h4">Adresse du club</h4>
+        <p>
+        Aikido Club Redonnais<br />
+        Dojo Louis Juette - Avenue de Beaumont<br />
+        35600 Redon
+        </p>
+      </div>
+      <div>
+        <h4 class="h4">Téléphone</h4>
+        <p>
+          Auriane Lopes : 06 31 93 65 29<br />
+          Stéphane Houeix : 09 80 96 02 60
+        </p>
+      </div>
+      <div>
+        <h4 class="h4">Email</h4>
+        <p>
+          <a href="mailto:contact@aikido-redon.org">contact@aikido-redon.org</a>
+        </p>
+      </div>
+    </address>
+  </footer>
+</body>
+
+</html>
